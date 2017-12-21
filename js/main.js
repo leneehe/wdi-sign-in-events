@@ -23,8 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
       input.addEventListener('blur', function() {
         this.classList.add('error');
       })
-
     })
+  })
+
+  modal.addEventListener('click', function(e) {
+    if(e.target.className != 'modal') return;
+    this.style.display = 'none';
   })
 
 });
