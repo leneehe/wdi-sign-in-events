@@ -17,6 +17,13 @@ document.addEventListener('DOMContentLoaded', function() {
   submit.addEventListener('click', function() {
     inputFields.forEach(function(input) {
       input.classList.add('error');
+      input.addEventListener('focus', function() {
+        this.classList.remove('error');
+      });
+      input.addEventListener('blur', function() {
+        this.classList.add('error');
+      })
+
     })
   })
 
