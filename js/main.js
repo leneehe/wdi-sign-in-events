@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
   })
 
   modal.addEventListener('click', function(e) {
-    if(e.target.className != 'modal') return;
+    if (e.target.className != 'modal') return;
     this.style.display = 'none';
   })
 
